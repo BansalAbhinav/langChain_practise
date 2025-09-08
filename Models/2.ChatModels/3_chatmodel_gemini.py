@@ -3,6 +3,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model= ChatGoogleGenerativeAI(model="gemini-1.5-flash",temperature=1.3)
+model= ChatGoogleGenerativeAI(model="gemini-1.5-flash")
 result=model.invoke("give me indian boy name ")
 print(result.content)
